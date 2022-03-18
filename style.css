@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+img {
+    width: 119px;
+}
+
+.container {
+    width: 100%;
+}
+
+.article {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.article-left h1 {
+    font-size: 25px;
+}
+
+.article-right {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    height: 20px;
+    text-align: start;
+}
+
+section.body {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    width: 278px;
+    height: 79px;
+    gap: 5px;
+    border: 1px solid black;
+}
+
+.information-nation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.information-right p {
+    color: gainsboro;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+@media (max-width:430px) {
+    button {
+        display: none;
+    }
+    section.body {
+        grid-template-columns: auto;
+    }
+}
